@@ -143,8 +143,8 @@ stateDiagram-v2
     Authenticated --> Subscribed: Subscribe to Scoreboard
     Subscribed --> ReceivingUpdates: Listening
     
-    ReceivingUpdates --> ReceivingUpdates: Receive scoreboard:update
-    ReceivingUpdates --> ReceivingUpdates: Receive score:personal:update
+    ReceivingUpdates --> ReceivingUpdates: Receive scoreboard update
+    ReceivingUpdates --> ReceivingUpdates: Receive personal score update
     
     ReceivingUpdates --> Reconnecting: Connection Lost
     Reconnecting --> Authenticating: Reconnected
